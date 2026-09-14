@@ -1,2 +1,2 @@
 Папка для личной странички
-![gif.gif](mywebpage/photos/gif.gif)
+![gif.gif](photos/gif.gif)
