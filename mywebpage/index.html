@@ -7,7 +7,7 @@
 <!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
 
 	<head>
-		<title>Личная страница Веры Кузнецовой</title>
+		<title>Личная страничка Влады Анисовец</title>
 	 	<!-- Required meta tags -->
 	 	<meta charset="utf-8">
 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,23 +19,27 @@
 <!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
 
 	</head>
+	<style>
+		.border { border: 10px solid #FFFFFF; }
+	</style>
 	
 <!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
-	<body>
+	<body style="background-color:#090a0a">
 
 <!-- меню (navigation bar) -->
 
-		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+		<nav style="background-color:black"
+		id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
 
 <!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
 			<div class="container"> 
 				<div class="navbar-header"> 
-					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+					<a style="color:white; font-family:Inter" href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
 				</div> 
 				<nav class="collapse navbar-collapse" id="bs-navbar"> 
 					<ul class="nav navbar-nav navbar-right"> 
-						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2026/index.html">Страница курса</a> </li> 
-						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2026/baling_261.html">Страница группы</a> </li> 
+						<li> <a style="color:white; font-family:Inter; font-size: 15px" href="https://lingvocodes.github.io/HSEinfo/ba-ling-2026/index.html">Страничка курса</a> </li> 
+						<li> <a style="color:white; font-family:Inter; font-size: 15px" href="https://lingvocodes.github.io/HSEinfo/ba-ling-2026/baling_263.html">Страничка группы</a> </li> 
 <!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
 					</ul>
 				</nav> 
@@ -43,28 +47,34 @@
 		</nav>
 
 <!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
-
-		<header style="background-color:plum; padding-top:70px; "> 
+		
+		
+		<header style="background-image: url('h3.jpg'); padding-top:100px; ">
 			<div class="container"> 
 				<div class="row">
 					<div class="col-md-4">
 						<br><br>
 <!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
-						<h1>Вера Кузнецова</h1>
+						<h1 style="color:white; font-size: 100px; margin:-40px -20px; font-family:Georgia"><b>Vlad Vulner</b></h1>
+						<p style="color:white; font-size: 22px; margin:50px -1px 10px; font-family:Inter"> Влада Анисовец</p>
 						<hr> <!-- это горизонтальная линия -->
-						<p><i>Человек, умеющий <b>создавать</i> HTML</b></p> 
+						<p style="color:white; font-size: 23px; margin:20px 1px; font-family:Inter"> Enough of the big words / Stage name:<i>Vulner (VVV)</i></p> 
 					</div>
 					<div class="col-md-4">
 <!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
 <!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
-<img src="myphoto.jpg" style="height:320px; margin:20px 20px 40px 20px; " >
+<img src="myphoto.jpg" style="height:420px; margin:-10px 20px 30px 80px;" class="border"> 
+<img src="pho1.jpg" style="height:210px; margin:-240px 70px 20px 580px;" class="border">
+<img src="pho2.jpg" style="height:160px; margin:-730px 70px 20px 470px;" class="border">
+
 					</div>
 				</div>
 			</div>
 		</header>
 
 <!-- часть страницы, которая под шапкой -->
-		<section id="portfolio">
+		<section style="background-color:black"
+		id="portfolio">
 			<div class="container">
 
 <!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
@@ -72,51 +82,52 @@
 
 <!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
 					<article>
-						<h3>Место учебы</h3>
-						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+						<h3 style="color:white; font-size: 30px;color:#ff242f; font-family:Impact">Place of study:</h3>
+						<p style="color:white; font-size: 22px; font-family:Inter"><i>Москва, НИУ ВШЭ, ФГН:ФиКЛ</i></p>
 					</article>
 					<article>
-						<h3>Родной город</h3>
-						<p>Москва</p>
+						<h3 style="color:white; font-size: 30px;color:#ff242f; font-family:Impact">Hometown:</h3>
+						<p style="color:white; font-size: 22px; font-family:Inter"><i>Балашиха</i></p>
 					</article>
 					<article>
-						<h3>Школа</h3>
+						<h3 style="color:white; font-size: 30px;color:#ff242f; font-family:Impact">School:</h3>
 <!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
-						<p>СУНЦ НГУ</p>
+						<p style="color:white; font-size: 22px; font-family:Inter"><i>Балашихинский Лицей</i></p>
 					</article>
 				</div>
 
 				<div class="col-md-6">
 					<article>
-						<h3>Тут можно написать</h3>
-						<p>Еще много много много много много много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						всего о себе</p>
+						<h2 style="color:white; font-size: 30px;color:#ff242f; font-family:Impact">About me...</h2>
+						<p style="color:white; font-size: 22px; font-family:Inter"> <i>Не люблю много писать о себе :3 <br>
+						Учусь потихоньку <br>
+						Хожу в зал :D <br>
+						Иногда рисую и пишу музыку ♪ <br>
+						Любимая еда — белок <br>
+						Обожаю шуточки и мемесы =) <br>
+						onda andar, bassvictim — ♡ <br>
+						<a style="font-size:20px;color:#ff242f" href="https://youtu.be/2yJgwwDcgV8?feature=shared">Nyan Cat↩</a> <br>
+						</i> </p>
 					</article>
 				</div>
 
 				<div class="col-md-3">
-					<h3>Я в соцсетях</h3>
+					<h3 style="color:white; font-size: 30px; font-family:Impact">Я в глобальной сети интернет:</h3>
 <!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
 					<ul>
-						<li>VK</li>
-						<li>Discord</li>
-						<li>Telegram</li>
+						<li> <a  style="font-size:20px;color:#ff242f; font-family:Inter" href="https://t.me/kickkakeee">Telegram↩</a></li>
+						<li> <a  style="font-size:20px;color:#ff242f; font-family:Inter" href="https://github.com/vLadaAn263">GitHub↩</a></li>
 					</ul>
 				</div>
 			</div>
+			<img src="gif.gif" style="height:130px; margin:-170px 50px 10px 1360px;">
 		</section>
 
 <!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
-		<footer class="bs-docs-footer"> 
+		<footer style="background-color:black"
+		class="bs-docs-footer"> 
 			<div class="container"> 
-				<p style="text-align:right; ">&copy; В. Кузнецова, 2026</p> 
+				<p style="text-align:right;color:#ff242f ">&copy; V. Anisovets, 2008</p> 
 			</div>
 		</footer>
 	</body>
